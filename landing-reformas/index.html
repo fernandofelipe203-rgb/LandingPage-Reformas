@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>kleber Reformas | Construção, Gesso, Pintura e Reformas – Orçamento grátis</title>
+<meta name="description" content="Construção, gesso, pintura e reformas em geral com um único responsável do início ao fim. Peça seu orçamento grátis pelo WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- MENU FIXO -->
+<header class="topo">
+  <a class="logo" href="#inicio">Kleber <span>Reformas</span></a>
+  <nav class="menu" aria-label="Principal">
+    <a href="#servicos">Serviços</a>
+    <a href="#como-funciona">Como funciona</a>
+    <a href="#depoimentos">Clientes</a>
+    <a href="#duvidas">Dúvidas</a>
+  </nav>
+  <a class="btn btn-sm" href="#orcamento">Orçamento grátis</a>
+</header>
+
+<main>
+<!-- HERO + FORMULÁRIO DE ORÇAMENTO -->
+<section class="hero" id="inicio">
+  <div class="hero-txt">
+    <h1>Reforma bem feita, com preço combinado antes de começar.</h1>
+    <p class="lead">Construção, gesso, pintura e reformas em geral com um único responsável do começo ao fim. Você fala com quem executa a obra.</p>
+    <ul class="checks">
+      <li>Orçamento sem compromisso</li>
+      <li>Visita técnica para medir e orientar</li>
+      <li>Valor e prazo combinados por escrito</li>
+    </ul>
+  </div>
+
+  <div class="card-orc" id="orcamento">
+    <div class="prog"><i id="barra"></i></div>
+    <p class="passo-info" id="passoInfo">Passo 1 de 3</p>
+
+    <form id="formOrc" novalidate>
+      <fieldset class="passo ativo" data-passo="1">
+        <legend>O que você precisa?</legend>
+        <p class="dica">Pode marcar mais de uma opção.</p>
+        <div class="chips">
+          <label><input type="checkbox" name="servico" value="Construção"><span>Construção</span></label>
+          <label><input type="checkbox" name="servico" value="Gesso / forro"><span>Gesso / forro</span></label>
+          <label><input type="checkbox" name="servico" value="Pintura"><span>Pintura</span></label>
+          <label><input type="checkbox" name="servico" value="Reforma completa"><span>Reforma completa</span></label>
+          <label><input type="checkbox" name="servico" value="Outro serviço"><span>Outro serviço</span></label>
+        </div>
+      </fieldset>
+
+      <fieldset class="passo" data-passo="2">
+        <legend>Onde será a obra?</legend>
+        <label class="campo">Bairro e cidade
+          <input type="text" id="local" placeholder="Ex.: Vila Mariana, São Paulo" autocomplete="address-level2">
+        </label>
+        <label class="campo">Tipo de imóvel
+          <select id="imovel">
+            <option>Casa</option><option>Apartamento</option><option>Comércio</option><option>Outro</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset class="passo" data-passo="3">
+        <legend>Quase lá. Como podemos te chamar?</legend>
+        <label class="campo">Seu nome
+          <input type="text" id="nome" placeholder="Seu nome" autocomplete="given-name">
+        </label>
+        <label class="campo">Quando quer começar?
+          <select id="prazo">
+            <option>O quanto antes</option><option>Nas próximas semanas</option><option>Ainda estou pesquisando</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <p class="erro" id="erro" role="alert"></p>
+      <div class="acoes">
+        <button type="button" class="voltar" id="btnVoltar" hidden>Voltar</button>
+        <button type="button" class="btn btn-wa" id="btnProx">Continuar</button>
+      </div>
+    </form>
+    <p class="nota">Você será levado ao WhatsApp com a mensagem pronta. Sem cadastro e sem spam.</p>
+  </div>
+</section>
+
+<!-- FAIXA DE CONFIANÇA (editar números reais) -->
+<section class="confianca" aria-label="Diferenciais">
+  <div><strong>+10 anos</strong><span>de experiência em obras</span></div>
+  <div><strong>+300</strong><span>serviços entregues</span></div>
+  <div><strong>Garantia</strong><span>por escrito em cada obra</span></div>
+  <div><strong>Visita grátis</strong><span>para medir e orçar</span></div>
+</section>
+
+<!-- SERVIÇOS -->
+<section class="sec" id="servicos">
+  <h2>Tudo o que sua obra precisa, com uma equipe só</h2>
+  <p class="sub">Menos gente para coordenar, menos recado perdido, menos dor de cabeça.</p>
+  <div class="servicos">
+    <article>
+      <h3>Construção</h3>
+      <p>Muros, edículas, ampliações, lajes e alvenaria com acabamento limpo.</p>
+      <a href="#orcamento" data-servico="Construção">Orçar construção</a>
+    </article>
+    <article>
+      <h3>Gesso e forro</h3>
+      <p>Forro rebaixado, sancas, molduras e paredes em drywall para um ambiente mais bonito.</p>
+      <a href="#orcamento" data-servico="Gesso / forro">Orçar gesso</a>
+    </article>
+    <article>
+      <h3>Pintura</h3>
+      <p>Interna e externa, textura e grafiato, com preparo correto da parede para durar.</p>
+      <a href="#orcamento" data-servico="Pintura">Orçar pintura</a>
+    </article>
+    <article>
+      <h3>Reformas em geral</h3>
+      <p>Banheiro, cozinha, piso, telhado e reparos. Resolvemos tudo em uma única obra.</p>
+      <a href="#orcamento" data-servico="Reforma completa">Orçar reforma</a>
+    </article>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA (sequência real) -->
+<section class="sec escura" id="como-funciona">
+  <h2>Do primeiro contato à obra entregue</h2>
+  <ol class="etapas">
+    <li><h3>1. Você pede o orçamento</h3><p>Responda 3 perguntas e fale com a gente no WhatsApp.</p></li>
+    <li><h3>2. Fazemos a visita técnica</h3><p>Medimos, vemos o que precisa ser feito e explicamos as opções.</p></li>
+    <li><h3>3. Você aprova o valor</h3><p>Preço, material e prazo combinados por escrito antes de começar.</p></li>
+    <li><h3>4. Executamos e entregamos</h3><p>Obra limpa, acompanhada por você e entregue com garantia.</p></li>
+  </ol>
+  <a class="btn" href="#orcamento">Quero meu orçamento</a>
+</section>
+
+<!-- DEPOIMENTOS (trocar por reais) -->
+<section class="sec" id="depoimentos">
+  <h2>Quem contratou, recomenda</h2>
+  <div class="depo">
+    <blockquote><p>Combinou o preço e não mudou. A equipe chegou no dia marcado e deixou tudo limpo.</p><cite>Marcia R., reforma de banheiro</cite></blockquote>
+    <blockquote><p>O forro de gesso ficou perfeito e a pintura acompanhou. Nem precisei chamar outro profissional.</p><cite>Carlos A., apartamento</cite></blockquote>
+    <blockquote><p>Pedi o orçamento à noite e no dia seguinte já tinha visita marcada. Atendimento muito honesto.</p><cite>Juliana S., pintura da casa</cite></blockquote>
+  </div>
+</section>
+
+<!-- DÚVIDAS (quebra de objeções) -->
+<section class="sec cinza" id="duvidas">
+  <h2>Perguntas que todo cliente faz</h2>
+  <div class="faq">
+    <details><summary>O orçamento realmente é grátis?</summary><p>Sim. A visita técnica e o orçamento não têm custo e não obrigam você a fechar nada.</p></details>
+    <details><summary>O preço pode aumentar no meio da obra?</summary><p>O valor combinado por escrito é o valor da obra. Se você pedir algo a mais, avisamos o custo antes de fazer.</p></details>
+    <details><summary>Vocês compram o material ou eu compro?</summary><p>Você escolhe. Podemos cuidar do material, indicando as melhores opções, ou usar o que você já tem.</p></details>
+    <details><summary>Tem garantia do serviço?</summary><p>Sim. Todo serviço sai com garantia por escrito. Se algo apresentar problema, voltamos para resolver.</p></details>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="final">
+  <h2>Sua reforma começa com uma mensagem.</h2>
+  <p>Atendemos um número limitado de obras por mês para manter a qualidade. Peça agora e garanta um lugar na agenda.</p>
+  <a class="btn btn-wa" href="#orcamento">Pedir orçamento grátis</a>
+</section>
+</main>
+
+<footer>
+  <p>© <span id="ano"></span> Silva Reformas. Construção, gesso, pintura e reformas em geral.</p>
+</footer>
+
+<!-- BOTÃO FLUTUANTE DO WHATSAPP -->
+<a class="flutuante" id="waFlutuante" href="#" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">Falar no WhatsApp</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
